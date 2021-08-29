@@ -14,7 +14,7 @@
             <h2 style="color: #fcfcfc">Lezer Plauground (by Gk0Wk)</h2>
             <a
                 class="github-link"
-                href="https://github.com/Gk0Wk/CodeMirror-Mode-TiddlyWiki5"
+                href="https://github.com/Gk0Wk/Lezer_PlayGround"
                 target="_blank"
             >
                 <img
