@@ -1,0 +1,13 @@
+module.exports = {
+    publicPath: process.env.NODE_ENV === "production" ? "./" : "/",
+    assetsDir: "static",
+    chainWebpack: (config) => {
+        // Node Loader
+        config.module
+            .rule('node')
+            .test(/\.node$/)
+            .use('raw-loader')
+            .loader('raw-loader')
+            .end();
+    }
+};

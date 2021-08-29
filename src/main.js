@@ -1,4 +1,10 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import {
+    createApp
+} from 'vue';
+import App from './App.vue';
+import installElementPlus from './plugins/element';
+import CodeMirror from './codemirror-editor/index';
 
-createApp(App).mount('#app')
+const app = createApp(App).use(CodeMirror);
+installElementPlus(app);
+app.mount('#app');
