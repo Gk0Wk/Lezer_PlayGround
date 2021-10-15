@@ -9,6 +9,7 @@
     <el-container
         class="root-container"
         @mousemove="resize2 && onResize2($event)"
+        @mouseup="resize1 = resize2 = false"
     >
         <el-header class="root-header">
             <h2 style="color: #fcfcfc">Lezer Plauground (by Gk0Wk)</h2>
@@ -40,7 +41,6 @@
             <el-main
                 id="split-bar1"
                 @mousedown="resize1 = true"
-                @mouseup="resize1 = false"
             ></el-main>
             <el-main class="grammar-editor-container" id="resize1_right">
                 <div class="grammar-editor-menubar">
