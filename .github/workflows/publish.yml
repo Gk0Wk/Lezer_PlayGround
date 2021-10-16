@@ -21,8 +21,6 @@ jobs:
 
     - name: Install Dependency
       run: npm install
-    - name: Reinstall Webpack
-      run: npm uninstall webpack && npm install webpack@^4.46.0 --save-dev
     - name: Build
       run: npm run build
 
