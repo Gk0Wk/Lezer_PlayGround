@@ -18,9 +18,11 @@ jobs:
     - uses: actions/setup-node@v2-beta
       with:
         node-version: '16'
-    - run: npm install webpack@^4.0.0 --save-dev
+
     - name: Install Dependency
       run: npm install
+    - name: Reinstall Webpack
+      run: npm uninstall webpack && npm install webpack@^4.46.0 --save-dev
     - name: Build
       run: npm run build
 
